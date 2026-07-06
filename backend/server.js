@@ -24,7 +24,7 @@ app.post('/api/send-alert', async (req, res) => {
     
     const mailOptions = {
       from: `"Road Inspector Alerts" <${process.env.EMAIL_USER}>`,
-      to: recipientEmail || 'justbored0812@gmail.com',
+      to: recipientEmail || 'roadinspectorteam@gmail.com',
       subject: '🚨 Road Inspector Alert: Crack Detected',
       text: message || 'A crack was detected in one of the uploaded images.',
     };
